@@ -1,0 +1,189 @@
+{
+	"id": "33feda0b563e947df62aaf0a992d7c1d",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.0",
+	"solcLongVersion": "0.8.0+commit.c7dfd78e",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/LinkedPro/Credential.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\n// credential type\r\nstruct Credential {\r\n    address issuer;\r\n    bytes signature;\r\n    bytes checksum;\r\n    string dataLocation;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"sources": {
+			"contracts/LinkedPro/Credential.sol": {
+				"ast": {
+					"absolutePath": "contracts/LinkedPro/Credential.sol",
+					"exportedSymbols": {
+						"Credential": [
+							10
+						]
+					},
+					"id": 11,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"canonicalName": "Credential",
+							"id": 10,
+							"members": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "issuer",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "105:14:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "105:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "signature",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "126:15:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bytes_storage_ptr",
+										"typeString": "bytes"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "bytes",
+										"nodeType": "ElementaryTypeName",
+										"src": "126:5:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bytes_storage_ptr",
+											"typeString": "bytes"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 7,
+									"mutability": "mutable",
+									"name": "checksum",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "148:14:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bytes_storage_ptr",
+										"typeString": "bytes"
+									},
+									"typeName": {
+										"id": 6,
+										"name": "bytes",
+										"nodeType": "ElementaryTypeName",
+										"src": "148:5:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bytes_storage_ptr",
+											"typeString": "bytes"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 9,
+									"mutability": "mutable",
+									"name": "dataLocation",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "169:19:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 8,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "169:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "Credential",
+							"nodeType": "StructDefinition",
+							"scope": 11,
+							"src": "80:112:0",
+							"visibility": "public"
+						}
+					],
+					"src": "33:159:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

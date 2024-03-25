@@ -1,0 +1,321 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "credentialId",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "issuer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "dataLocation",
+						"type": "string"
+					}
+				],
+				"name": "CredentialAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "credentialId",
+						"type": "bytes32"
+					}
+				],
+				"name": "CredentialRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "credentialId",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "issuer",
+						"type": "address"
+					}
+				],
+				"name": "CredentialRevoked",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "credentialId",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "signature",
+						"type": "bytes"
+					}
+				],
+				"name": "CredentialSignatureUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "credentialId",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "issuer",
+						"type": "address"
+					}
+				],
+				"name": "CredentialSigned",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "credentialId",
+						"type": "bytes32"
+					}
+				],
+				"name": "CredentialStatusRequested",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "credentialId",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "isCertified",
+						"type": "bool"
+					}
+				],
+				"name": "CredentialStatusUpdated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_issuer",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_checksum",
+						"type": "bytes"
+					},
+					{
+						"internalType": "string",
+						"name": "_dataLocation",
+						"type": "string"
+					}
+				],
+				"name": "addCredential",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "credentialId",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_credentialId",
+						"type": "bytes32"
+					}
+				],
+				"name": "removeCredential",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isSuccessful",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_credentialId",
+						"type": "bytes32"
+					}
+				],
+				"name": "requestCredentialStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_credentialId",
+						"type": "bytes32"
+					}
+				],
+				"name": "revokeCredential",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isSuccessful",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_credentialId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "signCredential",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isSuccessful",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_credentialId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "updateCredentialSignature",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LinkedPro/ProfileOwner.sol": "ProfileOwner"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LinkedPro/Credential.sol": {
+			"keccak256": "0x972568c0281b2ea273f85c82a2a45e6f7a94508708a8f66f74189349cd78f0c8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://755bb175f2a17813ff6a26f921b5cf952b332c10d84ccd91b2d77aa28d1b5368",
+				"dweb:/ipfs/QmdhHJMnu7QEcUDjZMoDHsQpxw4CViRiv9cFvHyDWYgC7e"
+			]
+		},
+		"contracts/LinkedPro/ProfileOwner.sol": {
+			"keccak256": "0xaf5a444fe796a337af9f0ed3c2311ba8c6e9b890a8161d72e8586a7214a0b872",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da07dbb0421c32bbc7048227116eea87b9de8fb2f4da99d7c2feed079f0ae213",
+				"dweb:/ipfs/QmS3THNTAsSWTYdxUB3PTHMYGG7KoBfmGfkM8uHzFJcYYm"
+			]
+		}
+	},
+	"version": 1
+}
