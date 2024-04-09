@@ -1,0 +1,67 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					}
+				],
+				"name": "uploadFileLocation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LinkedPro/ProfileOwner.sol": "IFileTransfer"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LinkedPro/Credential.sol": {
+			"keccak256": "0x972568c0281b2ea273f85c82a2a45e6f7a94508708a8f66f74189349cd78f0c8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://755bb175f2a17813ff6a26f921b5cf952b332c10d84ccd91b2d77aa28d1b5368",
+				"dweb:/ipfs/QmdhHJMnu7QEcUDjZMoDHsQpxw4CViRiv9cFvHyDWYgC7e"
+			]
+		},
+		"contracts/LinkedPro/ProfileOwner.sol": {
+			"keccak256": "0x5b94477a2d30c74aa2d15f7351f31fb2e864174d0f1bafb39e6376dcbd39a876",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e1d2fdc30b6f2826109edeb88a7b3f4ae5092d4f56add1afbf7e9d226161561c",
+				"dweb:/ipfs/QmZFfD5YXY9zfKg1t2aaLH4t8APhkGzxsNJYG2vNbvJEsm"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "location",
+						"type": "string"
+					}
+				],
+				"name": "FileUploaded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getFileLocations",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
+					}
+				],
+				"name": "uploadFileLocation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LinkedPro/FileTransfer.sol": "FileTransfer"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LinkedPro/FileTransfer.sol": {
+			"keccak256": "0x7788c9ce1308131c0b9ef9e1b2e616f3dcad8ad6888d8d935d1b6462f6c31927",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5e4957546617110feb3e43791e323f64fc7df85724a2db3924631104f91852d5",
+				"dweb:/ipfs/QmNNduL1EY9htYBsRo2b8NeG76yPnd1raRiBCp8wF699Cp"
+			]
+		}
+	},
+	"version": 1
+}

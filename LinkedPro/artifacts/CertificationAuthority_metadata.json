@@ -1,0 +1,154 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "fileChecksum",
+						"type": "bytes32"
+					}
+				],
+				"name": "CertificationIssued",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "fileChecksum",
+						"type": "bytes32"
+					}
+				],
+				"name": "CertificationRevoked",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "authorityOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "certifications",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_fileChecksum",
+						"type": "bytes32"
+					}
+				],
+				"name": "isCertified",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_fileChecksum",
+						"type": "bytes32"
+					}
+				],
+				"name": "issueCertification",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_fileChecksum",
+						"type": "bytes32"
+					}
+				],
+				"name": "revokeCertification",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LinkedPro/CertificationAuthority.sol": "CertificationAuthority"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LinkedPro/CertificationAuthority.sol": {
+			"keccak256": "0xd83fedd314b36f489954b0e6e0f0a5339adef967c6b01b8c19b3dc9c09c69da9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3e59388dfdd82f211534d840b369499a4847753df5a0c117a91a24bb672be192",
+				"dweb:/ipfs/QmctFpaHGqj9GCuy46saEDSnTqwDGdGsmWg72N9NjyfGNy"
+			]
+		}
+	},
+	"version": 1
+}
